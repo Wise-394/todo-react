@@ -9,10 +9,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout() {
+  const user1 = {
+    userName: "Robe Kyle",
+    taskNumber: 20
+  };
+
   return (
     <html lang="en">
       <body>
-        <Header/>
+        <Header userName={user1.userName} taskNumber={user1.taskNumber}/>
         <Page/>
       </body>
     </html>
