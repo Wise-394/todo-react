@@ -1,4 +1,4 @@
-import TaskCard from "./task-card";
+import TaskCard from "./components/task-card";
 
 export default function Home() {
   return (
