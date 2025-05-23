@@ -34,9 +34,8 @@ export default function Home() {
     <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-primary">
       <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">Ongoing Task</p>
       <div className="flex flex-col gap-4 md:flex-row">
-      {taskData.map(task => (
-          <TaskCard key={task.id} title={task.title} description={task.description} />
-        ))}
+        <TaskCard />
+
       </div>
     </div>
   );
