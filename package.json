@@ -6,10 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "flowbite-react patch"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.7",
+    "flowbite-react": "^0.11.7",
     "next": "^15.3.2",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
