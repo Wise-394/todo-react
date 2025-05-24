@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import TaskList from "@/components/task-list";
 import { TabItem, Tabs } from "flowbite-react";
