@@ -28,13 +28,13 @@ export default function Home() {
       <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">Your ToDo list</p>
       <Tabs>
         <TabItem title="all">
-          <TaskList task={taskState} handleTaskCheckbox={handleTaskCheckbox}/>
+          <TaskList task={taskState} handleTaskCheckbox={handleTaskCheckbox} taskListFilter="all"/>
         </TabItem>
         <TabItem title="active">
-          <p>Test</p>
+          <TaskList task={taskState} handleTaskCheckbox={handleTaskCheckbox} taskListFilter="active"/>
         </TabItem>
         <TabItem title="completed">
-          <p>Test</p>
+          <TaskList task={taskState} handleTaskCheckbox={handleTaskCheckbox} taskListFilter="completed"/>
         </TabItem>
       </Tabs>
 
