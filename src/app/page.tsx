@@ -28,7 +28,7 @@ export default function Home() {
       <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">Your ToDo list</p>
       <Tabs>
         <TabItem title="all">
-          <TaskList task={taskState} />
+          <TaskList task={taskState} handleTaskCheckbox={handleTaskCheckbox}/>
         </TabItem>
         <TabItem title="active">
           <p>Test</p>
